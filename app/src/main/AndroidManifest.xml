@@ -28,7 +28,12 @@
         <activity
             android:name=".complexCoordinatorLayout.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".complexCoordinatorLayout.BaseCoordinate" />
+        <activity
+            android:name=".complexCoordinatorLayout.SimpleCoordinatorLayoutActivity"
+            android:theme="@style/AppTheme.SimpleCoordinatorTheme" />
+        <activity android:name=".complexCoordinatorLayout.IOExampleActivity"></activity>
     </application>
 
 </manifest>

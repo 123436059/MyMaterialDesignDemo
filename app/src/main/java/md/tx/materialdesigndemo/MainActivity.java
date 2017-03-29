@@ -7,6 +7,7 @@ import android.view.View;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import md.tx.materialdesigndemo.complexCoordinatorLayout.BaseCoordinate;
 import md.tx.materialdesigndemo.complexCoordinatorLayout.BaseCoordinatorLayoutActivity;
 import md.tx.materialdesigndemo.complexCoordinatorLayout.ScrollingActivity;
 import md.tx.materialdesigndemo.floatActionButton.BaseFloatActionButton;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btnSnackBar, R.id.btnTextInputLayout, R.id.btnFloatActionButton, R.id.btnCoordinator, R.id.btnOfficialCoordinator})
+    @OnClick({R.id.btnSnackBar, R.id.btnTextInputLayout, R.id.btnFloatActionButton, R.id.btnCoordinator, R.id.btnOfficialCoordinator, R.id.btnCoordinatorDemo})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnSnackBar:
@@ -43,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.btnOfficialCoordinator:
                 startActivity(new Intent(this, ScrollingActivity.class));
+                break;
+
+            case R.id.btnCoordinatorDemo:
+                startActivity(new Intent(this, BaseCoordinate.class));
                 break;
         }
     }

@@ -53,7 +53,7 @@
         android:id="@+id/toolbar"
         style="@style/Widget.AppCompat.Toolbar"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="80dp"
         android:background="@color/colorPrimaryDark"
         android:elevation="4dp"
         app:layout_anchor="@id/appBarLayout"

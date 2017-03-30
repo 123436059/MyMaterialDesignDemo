@@ -33,7 +33,11 @@
         <activity
             android:name=".complexCoordinatorLayout.SimpleCoordinatorLayoutActivity"
             android:theme="@style/AppTheme.SimpleCoordinatorTheme" />
-        <activity android:name=".complexCoordinatorLayout.IOExampleActivity"></activity>
+        <activity android:name=".complexCoordinatorLayout.IOExampleActivity" />
+        <activity android:name=".complexCoordinatorLayout.CustomBehaviorImgActivity" />
+        <activity android:name=".AppbarLayout.BaseAppBarLayoutActivity" />
+        <activity android:name=".AppbarLayout.AppBarScrollActivity" />
+        <activity android:name=".complexCoordinatorLayout.MaterailUpActivity"></activity>
     </application>
 
 </manifest>

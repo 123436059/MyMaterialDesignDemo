@@ -7,8 +7,11 @@ import android.view.View;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import md.tx.materialdesigndemo.AppbarLayout.AppBarScrollActivity;
+import md.tx.materialdesigndemo.AppbarLayout.BaseAppBarLayoutActivity;
 import md.tx.materialdesigndemo.complexCoordinatorLayout.BaseCoordinate;
 import md.tx.materialdesigndemo.complexCoordinatorLayout.BaseCoordinatorLayoutActivity;
+import md.tx.materialdesigndemo.complexCoordinatorLayout.CustomBehaviorImgActivity;
 import md.tx.materialdesigndemo.complexCoordinatorLayout.ScrollingActivity;
 import md.tx.materialdesigndemo.floatActionButton.BaseFloatActionButton;
 import md.tx.materialdesigndemo.snackbar.BaseSnackBarActivity;
@@ -23,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btnSnackBar, R.id.btnTextInputLayout, R.id.btnFloatActionButton, R.id.btnCoordinator, R.id.btnOfficialCoordinator, R.id.btnCoordinatorDemo})
+    @OnClick({R.id.btnSnackBar, R.id.btnTextInputLayout, R.id.btnFloatActionButton, R.id.btnCoordinator, R.id.btnOfficialCoordinator
+            , R.id.btnCoordinatorDemo, R.id.btnCustomBehaviorImageView, R.id.btnAppBarLayout})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnSnackBar:
@@ -49,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnCoordinatorDemo:
                 startActivity(new Intent(this, BaseCoordinate.class));
                 break;
+
+            case R.id.btnCustomBehaviorImageView:
+                startActivity(new Intent(this, CustomBehaviorImgActivity.class));
+                break;
+
+            case R.id.btnAppBarLayout:
+                startActivity(new Intent(this, BaseAppBarLayoutActivity.class));
+                break;
+
         }
     }
 }

@@ -36,7 +36,8 @@ public class BaseCoordinate extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.tvSimpleExample, R.id.tvGoogleIoDetailExample, R.id.tvFlexibleSpaceExample, R.id.tvSwipeBehaviorExample})
+    @OnClick({R.id.tvSimpleExample, R.id.tvGoogleIoDetailExample, R.id.tvFlexibleSpaceExample, R.id.tvSwipeBehaviorExample
+            , R.id.tvMaterialUp})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tvSimpleExample:
@@ -48,6 +49,10 @@ public class BaseCoordinate extends AppCompatActivity {
             case R.id.tvFlexibleSpaceExample:
                 break;
             case R.id.tvSwipeBehaviorExample:
+                break;
+
+            case R.id.tvMaterialUp:
+                MaterailUpActivity.start(this);
                 break;
         }
     }
